@@ -1,7 +1,7 @@
 ﻿using MtgApiManager.Lib.Core;
 using MtgApiManager.Lib.Model;
 using MtgApiManager.Lib.Service;
-using MtgCollectionCore.model;
+using MtgCollectionCoreModel.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;

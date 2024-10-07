@@ -20,4 +20,9 @@
     <PackageReference Include="MtgApiManager.Lib" Version="2.3.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MtgCollectionCoreAPI\MtgCollectionCoreAPI.csproj" />
+    <ProjectReference Include="..\MtgCollectionCoreModel\MtgCollectionCoreModel.csproj" />
+  </ItemGroup>
+
 </Project>

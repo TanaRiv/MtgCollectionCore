@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MtgCollectionCore.model;
+using MtgCollectionCoreModel.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;

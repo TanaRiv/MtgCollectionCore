@@ -1,5 +1,5 @@
 ﻿using MtgApiManager.Lib.Model;
-using MtgCollectionCore.model;
+using MtgCollectionCoreModel;
 using MtgCollectionCore.service;
 
 namespace MtgCollectionCore

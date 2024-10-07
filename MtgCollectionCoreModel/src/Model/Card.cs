@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MtgCollectionCore.model
+namespace MtgCollectionCoreModel.Model
 {
     public class Card
     {

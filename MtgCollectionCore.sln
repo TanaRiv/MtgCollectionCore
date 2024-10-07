@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MtgCollectionCore", "MtgCollectionCore.csproj", "{04FD54F7-1319-4D3E-A08F-32231180F695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MtgCollectionCoreAPI", "MtgCollectionCoreAPI\MtgCollectionCoreAPI.csproj", "{1670A8AC-45A4-471E-B0AB-412FBC9D6A8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MtgCollectionCore", "MtgCollectionCore\MtgCollectionCore.csproj", "{FBADF1EE-95A6-497C-8E62-1CAB630776EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MtgCollectionCoreModel", "MtgCollectionCoreModel\MtgCollectionCoreModel.csproj", "{6EA87E14-259D-42EA-B8DB-B4D244053ABE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{04FD54F7-1319-4D3E-A08F-32231180F695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04FD54F7-1319-4D3E-A08F-32231180F695}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04FD54F7-1319-4D3E-A08F-32231180F695}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04FD54F7-1319-4D3E-A08F-32231180F695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1670A8AC-45A4-471E-B0AB-412FBC9D6A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1670A8AC-45A4-471E-B0AB-412FBC9D6A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1670A8AC-45A4-471E-B0AB-412FBC9D6A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1670A8AC-45A4-471E-B0AB-412FBC9D6A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBADF1EE-95A6-497C-8E62-1CAB630776EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBADF1EE-95A6-497C-8E62-1CAB630776EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBADF1EE-95A6-497C-8E62-1CAB630776EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBADF1EE-95A6-497C-8E62-1CAB630776EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA87E14-259D-42EA-B8DB-B4D244053ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA87E14-259D-42EA-B8DB-B4D244053ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA87E14-259D-42EA-B8DB-B4D244053ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA87E14-259D-42EA-B8DB-B4D244053ABE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
