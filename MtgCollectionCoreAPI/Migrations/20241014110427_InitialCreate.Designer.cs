@@ -3,26 +3,28 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MtgCollectionCore.Db;
+using MtgCollectionCoreAPI.Db;
 
 #nullable disable
 
-namespace MtgCollectionCore.Migrations
+namespace MtgCollectionCoreAPI.Migrations
 {
     [DbContext(typeof(MtgCollectionContext))]
-    partial class MtgCollectionContextModelSnapshot : ModelSnapshot
+    [Migration("20241014110427_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.33")
+                .HasAnnotation("ProductVersion", "6.0.35")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("MtgCollectionCore.model.Card", b =>
+            modelBuilder.Entity("MtgCollectionCoreModel.Model.Card", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

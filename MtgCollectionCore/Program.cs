@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 using System;
-using MtgCollectionCore.Db;
 
 namespace MtgCollectionCore
 {
@@ -17,14 +16,14 @@ namespace MtgCollectionCore
             // see https://aka.ms/applicationconfiguration.
             //var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).
 
-            var connectionString = ConfigurationManager.ConnectionStrings["MtgCollectionConnection"].ConnectionString;
-            var optionsBuilder = new DbContextOptionsBuilder<MtgCollectionContext>();
-            optionsBuilder.UseSqlServer(connectionString);
+            //var connectionString = ConfigurationManager.ConnectionStrings["MtgCollectionConnection"].ConnectionString;
+            //var optionsBuilder = new DbContextOptionsBuilder<MtgCollectionContext>();
+            //optionsBuilder.UseSqlServer(connectionString);
 
-            using (var context = new MtgCollectionContext(optionsBuilder.Options))
-            {
-                var cards = context.Cards.ToList();
-            }
+            //using (var context = new MtgCollectionContext(optionsBuilder.Options))
+            //{
+            //    var cards = context.Cards.ToList();
+            //}
             ApplicationConfiguration.Initialize();
             Application.Run(new MainView());
         }

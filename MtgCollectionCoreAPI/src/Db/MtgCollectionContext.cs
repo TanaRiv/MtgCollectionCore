@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MtgCollectionCore.Db
+namespace MtgCollectionCoreAPI.Db
 {
     public class MtgCollectionContext : DbContext
     {

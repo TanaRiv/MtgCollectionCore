@@ -18,12 +18,11 @@ namespace MtgCollectionCore.service
         {
             try
             {
-                Task<List<ICard>> tareaBusqueda;
                 LlamadaApiBuscarPorNombre(text, gridBusqueda);
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
 
         }
@@ -59,7 +58,7 @@ namespace MtgCollectionCore.service
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw;
             }
         }
 

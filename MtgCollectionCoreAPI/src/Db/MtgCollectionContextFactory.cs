@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using System.IO;
-using MtgCollectionCore.Db;
+using MtgCollectionCoreAPI.Db;
 using System.Configuration;
 
-namespace MtgCollectionCoreDb.Db
+namespace MtgCollectionCoreAPI.Db
 {
    
 
@@ -18,13 +18,18 @@ namespace MtgCollectionCoreDb.Db
         public MtgCollectionContext CreateDbContext(string[] args)
         {         
 
-            // Configura las opciones de DbContext
-            var optionsBuilder = new DbContextOptionsBuilder<MtgCollectionContext>();
-             var connectionString=@"server=DESKTOP-BI1PLJN\SQLEXPRESS ; database=mtgCollection ; User Id=sa; Password=Bluesman.1; TrustServerCertificate=True;";
+         
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+                      .SetBasePath(Directory.GetCurrentDirectory())
+                      .AddJsonFile("appsettings.json")
+                      .Build();
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
             if (string.IsNullOrEmpty(connectionString))
             {
                 throw new InvalidOperationException("La cadena de conexión 'MtgCollectionConnection' no se encuentra en app.config.");
             }
+            // Configura las opciones de DbContext
+            var optionsBuilder = new DbContextOptionsBuilder<MtgCollectionContext>();
             optionsBuilder.UseSqlServer(connectionString);
 
             return new MtgCollectionContext(optionsBuilder.Options);

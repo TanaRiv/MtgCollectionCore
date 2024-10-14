@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace MtgCollectionCore.Migrations
+namespace MtgCollectionCoreAPI.Migrations
 {
     public partial class InitialCreate : Migration
     {
